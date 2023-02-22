@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/gfaber1/SVG-logoGenerator#readme",
   "dependencies": {
-    "inquirer": "^8.2.4"
+    "inquirer": "^8.2.4",
+    "inquirer-maxlength-input-prompt": "^1.0.2"
   },
   "devDependencies": {
     "jest": "^24.9.0"
