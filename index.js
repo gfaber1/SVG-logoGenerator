@@ -22,19 +22,20 @@ function init() {
             // determines which shape the user answered and uses the other answers to set the text and shape colors
             function createSVG(answers) {
                 if (answers.shape === 'circle') {
+                    svg.setShape(newCircle)
                     svg.setTitle(answers.title, answers.textColor)
                     newCircle.setColor(answers.shapeColor)
-                    svg.setShape(newCircle)
                     return svg.render()
                 } else if (answers.shape === 'triangle') {
+                    svg.setShape(newTriangle)
                     svg.setTitle(answers.title, answers.textColor)
                     newTriangle.setColor(answers.shapeColor)
                     svg.setShape(newTriangle)
                     return svg.render()
                 } else if (answers.shape === 'square') {
+                    svg.setShape(newSquare)
                     svg.setTitle(answers.title, answers.textColor)
                     newSquare.setColor(answers.shapeColor)
-                    svg.setShape(newSquare)
                     return svg.render()
                 }
             }
@@ -46,7 +47,7 @@ function init() {
                 console.log('Generated logo.svg')
             })
 
-
+            console.log('SVG Created')
 
         });
 
